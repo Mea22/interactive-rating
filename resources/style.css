@@ -1,0 +1,216 @@
+body{
+    font-family: 'Overpass', sans-serif;
+    background-color: #131518;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.page1{
+    display: flex;
+    flex-direction: column;
+    max-width: 327px;
+    max-height: 360px;
+    padding: 24px 24px 32px;
+    margin: 0px 24px;
+    border-radius: 15px;
+    background: var(--black-gradient, radial-gradient(98.96% 98.96% at 50.00% 0%, #232A34 0%, #181E27 100%));
+}
+.star{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background-color: #262E38;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-bottom: 16px;
+}
+.text h2{
+    display: flex;
+    align-items: center;
+    color: var(--pure-white, #FFF);
+    height: 37px;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.text p{
+    color: var(--light-grey, #969FAD);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px; /* 157.143% */
+    margin-bottom: 24px;
+}
+.rate{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+.number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    background-color:#262E38;
+    border-radius: 50%;
+    color: var(--medium-gray, #7C8798);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.175px;
+}
+button{
+    display: flex;
+    height: 45px;
+    border-radius: 22.5px;
+    border: 0px;
+    background-color: #FC7614;
+    color: var(--pure-white, #FFF);
+    font-family: 'Overpass', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.867px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+.page2{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    max-width: 327px;
+    max-height: 360px;
+    padding: 34px 24px 37px;
+    margin: 0px 24px;
+    border-radius: 15px;
+    background: var(--black-gradient, radial-gradient(98.96% 98.96% at 50.00% 0%, #232A34 0%, #181E27 100%));
+}
+.photo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+.photo img{
+    width: 144px;
+    height: 96px;
+}
+.rate2{
+    color: var(--orange, #FC7614);
+    border-radius: 22.5px;
+    background: var(--dark-blue, #262E38);
+    padding: 5px 12px;
+    margin-bottom: 24px;
+}
+.rate2 p{
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+}
+.thanks{
+    display: flex;
+    align-items: center;
+    color: var(--pure-white, #FFF);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 10px;
+    height: 37px;
+}
+.thanks-p{
+    color: var(--light-grey, #969FAD);
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 22px;
+}
+@media only screen and (min-width:800px){
+    .page1{
+        max-width: 412px;
+        max-height: 416px;
+        padding: 32px 40px 32px 32px;
+        border-radius: 30px;
+    }
+    .star{
+        width: 48px;
+        height: 48px;
+        margin-bottom: 30px;
+    }
+    .text h2{
+        height: 43px;
+        font-size: 28px;
+        margin-bottom: 7px;
+    }
+    .text p{
+        font-size: 15px;
+        line-height: 24px;
+        margin-bottom: 24px;
+        max-width: 340px;
+    }
+    .rate{
+        margin-bottom: 32px;
+    }
+    .number{
+        width: 51px;
+        height: 51px;
+        font-size: 16px;
+        letter-spacing: 0.2px;
+        z-index: 10;
+    }
+    .number:hover{
+        background-color: #FC7614;
+    }
+    .number:hover span{
+        color: #FFFFFF;
+    }
+    button{
+        font-size: 15px;
+        letter-spacing: 2px;
+    }
+    button:hover{
+        background: var(--pure-white, #FFF);
+        color: var(--orange, #FC7614);
+    }
+    .active{
+        background-color: #7C8798;
+        color: #FFF;
+    }
+    .page2{
+        max-width: 412px;
+        max-height: 416px;
+        padding: 45px 40px 45px 32px;
+        border-radius: 30px;
+    }
+    .photo{
+        margin-bottom: 32px;
+    }
+    .photo img{
+        width: 162px;
+        height: 108px;
+    }
+    .rate2{
+        padding: 4px 19px 4px 20px;
+        margin-bottom: 32px;
+    }
+    .rate2 p{
+        font-size: 15px;
+        line-height: 24px;
+    }
+    .thanks{
+        font-size: 28px;
+        margin-bottom: 7px;
+        height: 43px;
+    }
+    .thanks-p{
+        font-size: 15px;
+        line-height: 24px;
+        max-width: 340px;
+    }   
+}
